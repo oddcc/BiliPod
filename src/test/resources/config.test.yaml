@@ -1,0 +1,44 @@
+feeds:
+  - # name should be unique and is used to identify the feed
+    name: 吃货请闭眼
+    description: 吃货请闭眼
+    # author is used to generate the podcast author info
+    author: 吃货请闭眼
+    # the id of a user on Bilibili
+    id: 94114029
+    pageSize: 50
+    updatePeriod: 12h
+    # video or audio
+    format: video
+    keepPolicy:
+      # keep the latest 10 episodes
+      # type: episode
+      # value: 10
+      # keep the episodes that published in the last 7 days
+      type: time
+      value: 7d
+    # regex for title or description
+    filterPolicy:
+      withTitle:
+      withOutTitle:
+      withDescription:
+      withOutDescription:
+    # cover image url and used to generate the podcast cover image
+    cover: https://i0.hdslb.com/bfs/face/0f889c10e045fb6e876d541e1ebdd990d7b963ff.jpg@240w_240h_1c_1s.webp
+  - name: 玫瑰叔
+    description: 玫瑰叔
+    author: 玫瑰叔
+    id: 36726929
+    pageSize: 50
+    updatePeriod: 12h
+    format: video
+    keepPolicy:
+      type: episode
+      value: 10
+    # regex for title or description
+    filterPolicy:
+      withTitle:
+      withOutTitle:
+      withDescription:
+      withOutDescription:
+    cover: https://i2.hdslb.com/bfs/face/301fdebf14721844058f2fb4d40206596bdb0c37.jpg@240w_240h_1c_1s.webp
